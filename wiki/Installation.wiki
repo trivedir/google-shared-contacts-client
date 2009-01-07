@@ -1,0 +1,14 @@
+#summary How to configure your environment to use this script.
+#labels Featured,Phase-Deploy
+
+= Requirements =
+  * Python 2.4 or higher
+  * [http://pypi.python.org/pypi/elementtree/ ElementTree] Python library (builtin with Python 2.5 and higher)
+  * [http://code.google.com/p/gdata-python-client/ GData Python client library] version 1.2.3 or above
+  * the login and password of a Google Apps domain administrator account
+
+= Installation Procedure =
+
+  # [http://code.google.com/p/google-shared-contacts-client/downloads/list Download] the project in your preferred format: `.tar.gz` or `.zip`.
+  # Decompress the archive on your machine. All the script files belong to a `google-shared-contacts-client/` directory.
+  # If necessary, install the GData Python client library and its dependencies. This article gives a detailed procedure: [http://code.google.com/apis/gdata/articles/python_client_lib.html Getting Started With the Google Data Python Library].<br>You can also download the GData Python client library and move its `src/atom/` and `src/gdata/` directories to `google-shared-contacts-client/` so that the script can load the `atom` and `gdata` modules.
