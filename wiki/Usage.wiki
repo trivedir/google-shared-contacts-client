@@ -1,0 +1,51 @@
+#summary How to use the script.
+#labels Featured
+
+= Importing Microsoft Outlook contacts into the shared contact list of a domain =
+
+  # Export your Microsoft Outlook contacts to CSV file in Windows format.
+  # [Installation Install the script and its dependencies.]
+  # Run the script with:
+<pre>
+cd google-shared-contacts-client
+python shared_contacts.py --admin=*your-admin-login@your-domain.com* --import=*your-ms-outlook-contacts-file.csv* --output=*output-file.csv*</pre>
+
+The script will ask for the admin password.
+
+Note that the script will print the contacts before and after the loading of contacts.<br>The contacts should be viewable in the Contact Manager within 24 hours, at this address: `http://www.google.com/contacts/a/your-domain.com`
+
+The output file will contain all added or updated contacts with their ID, so that you can later update or delete them. The output format is suitable for input to another invocation.
+
+= Imported CSV file format =
+
+The Zip file includes an example file: `outlook.csv`.
+
+The file is a comma-separated CSV file. The first line should contain the name of each column. Accepted columns are:
+  * Action: the action to perform on the contact, as one of: add, update, delete.
+  * ID: the ID of the contact; must be left empty for add action, set for update and delete actions. You can retrieve contact IDs from the output of an `--import` or `--export` command.
+  * contact fields: [SupportedContactFields full list of accepted fields].
+
+Example:
+{{{
+Action,ID,Name,E-mail Address,Business Phone
+add,,Adam Glacius,adam.glacius@anycom.com,+1 555 3227 8543
+update,241a444f0b330b22,Daniel Ireland,danielireland@restty.com,+1 555 3227 8544
+delete,527fbda08922b018,Duncan Amey,duncanamey@dreamt.com,+1 555 3227 8545
+}}}
+
+= Other features =
+
+The script also enables you to:
+  * *export* the existing contacts to a CSV file, with `--export=exported-file.csv`<br>Please note that not all fields are supported by this feature: only the first home/work/other email addresses/phone numbers/postal addresses are retained. We recommend not using this feature to synchronize your address list back to your Outlook repository.
+  * *delete all contacts*, with: `--clear`
+
+= Example invocations =
+
+Imports the contacts of your-ms-outlook-contacts-file.csv into the domain. Writes the added or updated contacts to `output-file.csv`:<br>
+`python contacts_importer.py --admin=your-admin-login@your-domain.com --import=your-ms-outlook-contacts-file.csv --output=output-file.csv`
+
+Exports all contacts of the domain to `export-file.csv`:<br>
+`python contacts_importer.py --admin=your-admin-login@your-domain.com --export=export-file.csv`
+
+Deletes all contacts of the domain:<br>
+`python contacts_importer.py --admin=your-admin-login@your-domain.com --clear`
