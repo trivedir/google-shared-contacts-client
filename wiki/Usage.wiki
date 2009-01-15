@@ -39,6 +39,11 @@ The script also enables you to:
   * *export* the existing contacts to a CSV file, with `--export=exported-file.csv`<br>Please note that not all fields are supported by this feature: only the first home/work/other email addresses/phone numbers/postal addresses are retained. We recommend not using this feature to synchronize your address list back to your Outlook repository.
   * *delete all contacts*, with: `--clear`
 
+If you specify several commands at the same time, they are executed in the following order: `--clear`, `--import`, `--export`. In particular:
+  * `--clear` is executed first because it asks for confirmation. If you specify `--clear` with another command, the script is guaranteed to execute without interruption after `--clear` prompt.
+  * If you specify `--clear --export`, all contacts are deleted first, hence `--export` generates an empty file.
+  * If you specify `--import --export`, the new contacts are imported first, then `--export` generates a file containing all contacts of the domain including the new ones.
+
 = Example invocations =
 
 Imports the contacts of your-ms-outlook-contacts-file.csv into the domain. Writes the added or updated contacts to `output-file.csv`:<br>
