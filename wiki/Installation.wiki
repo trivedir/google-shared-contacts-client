@@ -4,7 +4,7 @@
 = Requirements =
   * Python 2.4 or higher
   * [http://pypi.python.org/pypi/elementtree/ ElementTree] Python library (builtin with Python 2.5 and higher)
-  * [http://code.google.com/p/gdata-python-client/ GData Python client library] version 1.2.3 or above
+  * [http://code.google.com/p/gdata-python-client/ GData Python client library] version 1.2.4 or above
   * the login and password of a Google Apps domain administrator account
 
 = Installation Procedure =
