@@ -47,10 +47,10 @@ If you specify several commands at the same time, they are executed in the follo
 = Example invocations =
 
 Imports the contacts of your-ms-outlook-contacts-file.csv into the domain. Writes the added or updated contacts to `output-file.csv`:<br>
-`python contacts_importer.py --admin=your-admin-login@your-domain.com --import=your-ms-outlook-contacts-file.csv --output=output-file.csv`
+`python shared_contacts.py --admin=your-admin-login@your-domain.com --import=your-ms-outlook-contacts-file.csv --output=output-file.csv`
 
 Exports all contacts of the domain to `export-file.csv`:<br>
-`python contacts_importer.py --admin=your-admin-login@your-domain.com --export=export-file.csv`
+`python shared_contacts.py --admin=your-admin-login@your-domain.com --export=export-file.csv`
 
 Deletes all contacts of the domain:<br>
-`python contacts_importer.py --admin=your-admin-login@your-domain.com --clear`
+`python shared_contacts.py --admin=your-admin-login@your-domain.com --clear`
