@@ -8,7 +8,7 @@
   # Run the script with:
 <pre>
 cd google-shared-contacts-client
-python shared_contacts.py --admin=*your-admin-login@your-domain.com* --import=*your-ms-outlook-contacts-file.csv* --output=*output-file.csv*</pre>
+python shared_contacts_profiles.py --admin=*your-admin-login@your-domain.com* --import=*your-ms-outlook-contacts-file.csv* --output=*output-file.csv*</pre>
 
 The script will ask for the admin password.
 
