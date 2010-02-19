@@ -1,13 +1,19 @@
 #summary How to configure your environment to use this script.
 #labels Featured,Phase-Deploy
 
-= Requirements =
+= Win32 Release =
+  * No extra requirements, only download the Win32 zip file, decompress and use the shared_contacts_profiles.exe file within the folder
+
+
+= Regular Python Release (Non Win32)=
+
+== Requirements ==
   * Python 2.4 or higher
   * [http://pypi.python.org/pypi/elementtree/ ElementTree] Python library (builtin with Python 2.5 and higher)
   * [http://code.google.com/p/gdata-python-client/ GData Python client library] version 2.0.6 or above
   * the login and password of a Google Apps domain administrator account
 
-= Installation Procedure =
+== Installation Procedure ==
 
   # [http://code.google.com/p/google-shared-contacts-client/downloads/list Download] the project in your preferred format: `.tar.gz` or `.zip`.
   # Decompress the archive on your machine. All the script files belong to a `google-shared-contacts-client/` directory.
