@@ -10,7 +10,7 @@
 cd google-shared-contacts-client
 python shared_contacts_profiles.py --admin=*your-admin-login@your-domain.com* --import=*your-ms-outlook-contacts-file.csv* --output=*output-file.csv*</pre>
 
-OR (only Windows, using Win32 release)
+OR (only *Windows*, using *Win32 release*)
 
 <pre>
 cd google-shared-contacts-client
