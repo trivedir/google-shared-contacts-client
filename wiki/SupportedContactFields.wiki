@@ -37,24 +37,13 @@ Below is the complete list of supported fields. Other fields are ignored. The _N
   * E-mail Address
   * E-mail 2 Address
   * E-mail 3 Address
-  * E-mail 4 Address
-  * E-mail 5 Address
-  * E-mail 6 Address
-  * E-mail 7 Address
-  * E-mail 8 Address
-  * E-mail 9 Address
-  * E-mail 10 Address
-  * E-mail 11 Address
-  * E-mail 12 Address
-  * E-mail 13 Address
-  * E-mail 14 Address
-  * E-mail 15 Address
-  * E-mail 16 Address
-  * E-mail 17 Address
-  * E-mail 18 Address
-  * E-mail 19 Address
-  * E-mail 20 Address
-  * E-mail 21 Address
-  * E-mail 22 Address
-  * E-mail 23 Address
-  * E-mail 24 Address
+  ...
+  * E-mail 68 Address
+  * E-mail 69 Address
+  * Website Home-Page
+  * Website Blog
+  * Website Profile
+  * Website Home
+  * Website Work
+  * Website Other
+  * Website FTP
