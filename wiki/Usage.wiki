@@ -1,6 +1,10 @@
 #summary How to use the script.
 #labels Featured
 
+= Prerequisites =
+
+The script uses the the [http://code.google.com/googleapps/domain/shared_contacts/gdata_shared_contacts_api_reference.html Domain Shared Contacts API], which is only available to Google Apps *Premier* and *Education Editions* domains. To enable the API, log in to your admin account, and click the *User accounts* tab. Then click the *Settings* subtab, select the checkbox to enable the Provisioning API and save your changes. Please note changes can take up to 24 hours to be reflected in the email address auto-complete and the contact manager.
+
 = Importing Microsoft Outlook contacts into the shared contact list of a domain =
 
   # Export your Microsoft Outlook contacts to CSV file in Windows format.
