@@ -65,11 +65,3 @@ Exports all contacts of the domain to `export-file.csv`:<br>
 
 Deletes all contacts of the domain:<br>
 `python shared_contacts_profiles.py --admin=your-admin-login@your-domain.com --clear`
-
-= Known problems =
-
-I get an error similar to:
-
-{{{UnicodeDecodeError: 'utf8' codec can't decode byte <number here> in position 0: unexpected code byte}}}
-
-This means that your CSV file's encoding is not UTF-8 and currently the python script will only read UTF-8 (we will try to fix that in future releases). For now you will have to convert your CSV file to UTF-8, the following website explains the different methods to do it: http://docs.moodle.org/en/Converting_files_to_UTF-8
